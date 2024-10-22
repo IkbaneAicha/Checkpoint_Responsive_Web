@@ -1,0 +1,416 @@
+/* General Styles */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* General Navbar Styling */
+.navbar {
+    background-color: #34495e; /* Dark background */
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f1c40f; /* Bright yellow to stand out */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff; /* Hover effect */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #ecf0f1; /* Light text color */
+    margin-left: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1c40f; /* Yellow on hover */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #f1c40f; /* Yellow underline */
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Light border for toggler */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#home {
+    background: url('/images/background.webp') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Button Styling */
+.btn-primary, .btn-custom {
+    background-color: #34495e !important; /* Same as navbar color */
+    color: #ecf0f1; /* Light text color */
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover, .btn-custom:hover {
+    background-color: #2c3e50 !important; /* Slightly darker on hover */
+    transform: translateY(-5px);
+}
+
+/* Services Section */
+#services {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Dark color for headings */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#services h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #f1c40f; /* Yellow underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#services p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f4f4f9;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align the boxes */
+    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Dark color for headings */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#services h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #f1c40f; /* Yellow underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#services p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f4f4f9;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the boxes evenly */
+    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Dark color for headings */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#services h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #f1c40f; /* Yellow underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#services p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Service Boxes */
+#services .col-md-4 {
+    flex: 1 1 30%; /* Allow boxes to grow and shrink, with a base width of 30% */
+    margin: 15px; /* Space between boxes */
+    border: 2px solid #34495e; /* Add border */
+    border-radius: 8px; /* Optional: rounded corners */
+    padding: 20px; /* Space between content and border */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+#services .col-md-4:hover {
+    transform: scale(1.05);
+}
+
+#services i {
+    font-size: 3rem;
+    color: #f1c40f; /* Yellow for icons */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+#services .col-md-4:hover i {
+    color: #34495e; /* Darker icon color on hover */
+}
+
+#services h4 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+#services p {
+    color: #7f8c8d;
+}
+
+#services .col-md-4:hover h4 {
+    color: #f1c40f; /* Yellow title on hover */
+    transition: color 0.3s ease;
+}
+
+#services .col-md-4:hover p {
+    color: #34495e; /* Darker description on hover */
+    transition: color 0.3s ease;
+}
+
+
+
+/* Gallery Section */
+
+/* Gallery Section */
+#gallery {
+    padding: 60px 0; /* Adjust padding as needed */
+    background-color: #f4f4f9; /* Light background color */
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Dark color for headings */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#gallery p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+/* Row Styling */
+#gallery .row {
+    display: flex; /* Use flexbox for the row */
+    justify-content: space-between; /* Space out the columns evenly */
+    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+}
+
+/* Card Styling */
+#gallery .col-md-4 {
+    flex: 1 1 30%; /* Allow boxes to grow and shrink, with a base width of 30% */
+    margin: 15px; /* Space between boxes */
+}
+
+#gallery .card {
+    border: 2px solid #34495e; /* Add border */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+#gallery .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+#gallery .card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image covers the space */
+}
+
+#gallery .card-body {
+    padding: 15px; /* Padding for card body */
+}
+
+#gallery .card-title {
+    font-size: 1.5rem;
+    color: #34495e;
+}
+
+#gallery .card-text {
+    color: #7f8c8d;
+}
+
+
+
+/* Contact Form Styling */
+#contact {
+    background-color: #f4f4f9; /* Light background */
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Dark color for headings */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+#contact form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .form-label {
+    font-weight: bold;
+    color: #34495e;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+}
+
+#contact textarea {
+    height: 150px; /* Ensures the textarea has more height */
+    resize: none;  /* Prevents the textarea from being resized */
+}
+
+#contact button[type="submit"] {
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #f1c40f;
+    color: #34495e;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
